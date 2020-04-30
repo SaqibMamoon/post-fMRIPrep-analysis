@@ -136,7 +136,6 @@ def main():
       
       # Preprocessed files that are input to the workflow
       prepped_bold = layout.get(**query)
-      print(prepped_bold)
       if not prepped_bold:
           print('No preprocessed files found under the given derivatives '
                 'folder "%s".' % derivatives_dir)
@@ -157,7 +156,6 @@ def main():
               inputs[sub] = {}
               base = base_entities.intersection(entities)
               subquery = {k: v for k, v in entities.items() if k in base}
-              print(subquery, "this is subquery")
               inputs[sub]['bold'] = part.path
               inputs[sub]['mask'] = layout.get(
                   domains='derivatives',
