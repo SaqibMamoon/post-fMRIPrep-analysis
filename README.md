@@ -46,7 +46,7 @@ Example command:
 ```
 python run.py "preprocessed/fmriprep" "results" participant --space MNI152NLin2009cAsym --bids-dir "Nifti" --participant-label 104 119 --task nback -w "work"
 ```
-Everything in quotes is a folder. More possible inputs can be found at the beginning of run.py.
+Everything in quotes is a folder. More possible inputs can be found at the beginning of run.py. If space is not specified, it will default to fsaverage. Here is a list of the possible space inputs: 'MNI152Lin', 'MNI152NLin2009cAsym', 'MNI152NLin6Asym', 'MNI152NLin6Sym', 'MNIInfant', 'MNIPediatricAsym', 'NKI', 'OASIS30ANTs', 'PNC', 'fsLR', 'fsaverage'.
 
 ## Possible Errors
 
