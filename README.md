@@ -1,5 +1,5 @@
 # post-fMRIPrep-analysis
-Updated version of "https://github.com/poldracklab/ds003-post-fMRIPrep-analysis/tree/" python scripts for FMRI brain imaging analysis
+Updated version of "https://github.com/poldracklab/ds003-post-fMRIPrep-analysis/tree/" package for FMRI brain imaging analysis
 
 ## Getting Started
 
@@ -25,16 +25,16 @@ The file structure should follow the BIDS standard format. An example file struc
 - interfaces.py
 - workflows.py 
 - Preprocessed (folder)
----- fmriprep (folder) <--- this is the derivatives directory
--------- sub-(number) (folder)
------------- anat (folder)
------------- figures (folder)
------------- ses-post (folder)
------------- ses-pre (folder)
+  - fmriprep (folder) <--- this is the derivatives directory
+    - sub-(number) (folder)
+      - anat (folder)
+      - figures (folder)
+      - ses-post (folder)
+      - ses-pre (folder)
 - Nifti (folder) <--- this is the bids directory
----- sub-(number) (folder)
--------- ses-pre
--------- ses-post
+  - sub-(number) (folder)
+    - ses-pre
+    - ses-post
 
 ## Run the application
 
